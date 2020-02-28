@@ -5,7 +5,11 @@ import org.springframework.stereotype.Component;
 import com.sirzhangs.common.entity.RequestResult;
 import com.sirzhangs.consumer.entity.User;
 import com.sirzhangs.consumer.remote.UserFeign;
-
+/**
+ * 采用Feign及其自带的Hystrix熔断
+ * @author sirzh
+ *
+ */
 @Component
 public class UserHystrix implements UserFeign{
 
