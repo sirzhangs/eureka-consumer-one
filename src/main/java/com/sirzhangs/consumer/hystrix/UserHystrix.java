@@ -15,12 +15,12 @@ public class UserHystrix implements UserFeign{
 
 	@Override
 	public RequestResult add(User user) {
-		return RequestResult.fail();
+		return RequestResult.fail("add,Feign方式");
 	}
 
 	@Override
 	public RequestResult findById(String id) {
-		return RequestResult.fail();
+		return RequestResult.fail("findById,Feign方式");
 	}
 
 }

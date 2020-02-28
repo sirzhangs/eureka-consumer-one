@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.sirzhangs.common.entity.RequestResult;
 import com.sirzhangs.consumer.entity.User;
 import com.sirzhangs.consumer.hystrix.UserHystrix;
-
+/**
+ * feign方式远程服务调用
+ * @author sirzh
+ *
+ */
 @FeignClient(name = "eureka-provider-one",fallback = UserHystrix.class)
 public interface UserFeign {
 	
